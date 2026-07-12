@@ -1,0 +1,24 @@
+{
+    "kind": "collectionType",
+    "collectionName": "konie",
+    "info": {
+          "singularName": "kon",
+          "pluralName": "konie",
+          "displayName": "Koń",
+          "description": "Konie w stajni"
+    },
+    "options": {
+          "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+          "imie": { "type": "string", "required": true },
+          "typ": { "type": "enumeration", "enum": ["drobniejszy", "uniwersalny", "mocniejszy"] },
+          "charakterystyka": { "type": "text" },
+          "foto_url": { "type": "string" },
+          "foto_position": { "type": "string", "default": "center center" },
+          "foto_fit": { "type": "string", "default": "cover" },
+          "nadaje_sie_do": { "type": "json" },
+          "supabase_id": { "type": "string" }
+    }
+}
