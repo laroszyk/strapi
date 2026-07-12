@@ -1,0 +1,29 @@
+{
+    "kind": "collectionType",
+    "collectionName": "treningi",
+    "info": {
+          "singularName": "trening",
+          "pluralName": "treningi",
+          "displayName": "Trening",
+          "description": "Wpisy treningowe"
+    },
+    "options": {
+          "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+          "data": { "type": "date" },
+          "typ_jazdy": { "type": "enumeration", "enum": ["plac", "teren", "skoki", "ujeżdżenie", "lonża", "inne"] },
+          "grupowa": { "type": "boolean", "default": false },
+          "cwiczenia": { "type": "json" },
+          "uwagi": { "type": "text" },
+          "dobrze": { "type": "text" },
+          "do_poprawy": { "type": "text" },
+          "ocena": { "type": "integer", "min": 1, "max": 5 },
+          "gid": { "type": "string" },
+          "foto_url": { "type": "string" },
+          "supabase_id": { "type": "string" },
+          "jezdziec": { "type": "relation", "relation": "manyToOne", "target": "api::jezdziec.jezdziec" },
+          "kon": { "type": "relation", "relation": "manyToOne", "target": "api::kon.kon" }
+    }
+}
