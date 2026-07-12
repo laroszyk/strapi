@@ -1,0 +1,26 @@
+{
+    "kind": "collectionType",
+    "collectionName": "jezdzcy",
+    "info": {
+          "singularName": "jezdziec",
+          "pluralName": "jezdzcy",
+          "displayName": "Jeździec",
+          "description": "Jeźdźcy / kursanci"
+    },
+    "options": {
+          "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+          "imie": { "type": "string", "required": true },
+          "poziom": { "type": "enumeration", "enum": ["początkujący", "średniozaawansowany", "zaawansowany"] },
+          "jezdzi_od": { "type": "string" },
+          "aktywny": { "type": "boolean", "default": true },
+          "umiejetnosci": { "type": "json" },
+          "do_poprawy": { "type": "json" },
+          "postawa": { "type": "json" },
+          "preferencje": { "type": "json" },
+          "notatki": { "type": "json" },
+          "supabase_id": { "type": "string" }
+    }
+}
