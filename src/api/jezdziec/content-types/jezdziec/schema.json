@@ -21,6 +21,7 @@
           "postawa": { "type": "json" },
           "preferencje": { "type": "json" },
           "notatki": { "type": "json" },
+          "konie": { "type": "json" },
           "supabase_id": { "type": "string" }
     }
 }
