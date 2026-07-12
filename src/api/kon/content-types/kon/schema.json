@@ -13,7 +13,7 @@
     "pluginOptions": {},
     "attributes": {
           "imie": { "type": "string", "required": true },
-          "typ": { "type": "enumeration", "enum": ["drobniejszy", "uniwersalny", "mocniejszy"] },
+          "typ": { "type": "enumeration", "enum": ["gorącokrwisty", "zimnokrwisty"] },
           "charakterystyka": { "type": "text" },
           "foto_url": { "type": "string" },
           "foto_position": { "type": "string", "default": "center center" },
